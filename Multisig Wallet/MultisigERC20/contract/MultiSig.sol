@@ -22,8 +22,6 @@ import "./Interfaces.sol";
 
 contract MultiSig {
 
-    address immutable WETH;
-
     uint private totalPower;
     // active transaction requests
     uint[] private enableTransactions;
@@ -94,12 +92,11 @@ contract MultiSig {
         uint reject;
     }
 
-    constructor(address[] memory _addr, uint[] memory _powers, address _WETH) {
+    constructor(address[] memory _addr, uint[] memory _powers) {
         for (uint256 i = 0; i < _addr.length; i++) {
             approvers[_addr[i]] = _powers[i];
             totalPower += _powers[i];
         }
-        WETH = _WETH;
 
     }
     //returns enable transactions list
