@@ -11,8 +11,8 @@ contract("FlashLoan test", () => {
         const flash = await Flashloan.new(Vault);
         const ierc = await IERC20.at(Dai);
 
-        let bal = await ierc.balanceOf(flash.address);
-        console.log(`Dai balance before flashloan :${bal}`)
+        let balance = await ierc.balanceOf(flash.address);
+        console.log(`Dai balance before flashloan :${balance}`)
 
         const event = await flash.flashLoan([Dai],[amount]);
         
