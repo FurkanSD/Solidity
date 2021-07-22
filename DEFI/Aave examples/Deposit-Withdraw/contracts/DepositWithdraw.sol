@@ -3,7 +3,7 @@ pragma solidity 0.8.0;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "./ILendingPool.sol";
 
-contract DepositBorrow {
+contract DepositWithdraw {
     ILendingPool lending;
     IERC20 token;
 
