@@ -1,0 +1,19 @@
+{
+  "name": "Auction-ERC721",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "bn.js": "^5.2.0",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "eth-gas-reporter": "^0.2.22",
+    "truffle-plugin-verify": "^0.5.11"
+  }
+}
